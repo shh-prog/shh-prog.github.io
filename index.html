@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIT Archive</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "맑은 고딕";
+        background-color: #f5f7fa;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      #page {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+
+      header {
+        height: auto;
+        padding: 10px 0;
+      }
+
+      #logo {
+        float: left;
+        margin-top: 10px;
+        color: #087bac;
+      }
+      nav {
+        margin-top: 10px;
+        background-color: #0e0f0f;
+      }
+
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      nav ul li {
+        flex: 1;
+        position: relative;
+        text-align: center;
+        min-width: 120px;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 15px;
+        color: white;
+      }
+
+      nav ul li:hover {
+        background-color: #055d81;
+      }
+
+      nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #087bac;
+        z-index: 100;
+      }
+
+      nav ul li:hover ul {
+        display: block;
+      }
+
+      nav ul li ul li {
+        width: 100%;
+      }
+
+      #banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      #today {
+        margin-top: 20px;
+      }
+
+      #workout,
+      #diet {
+        width: 48%;
+        float: left;
+        border: 1px solid #ccc;
+        padding: 15px;
+        background: white;
+      }
+
+      #diet {
+        float: right;
+      }
+      #diet h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #diet li {
+        margin-bottom: 5px;
+        line-height: 1.6;
+      }
+
+      #workout img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+      }
+
+      #shortcut {
+        margin-top: 30px;
+      }
+
+      .menu_box {
+        width: 18%;
+        float: left;
+        margin-right: 2%;
+        border: 1px solid #ccc;
+        text-align: center;
+        background: white;
+      }
+
+      .menu_box:last-child {
+        margin-right: 0;
+      }
+
+      .menu_box img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+      }
+
+      #intro {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #eee;
+      }
+
+      #intro p {
+        line-height: 1.8;
+        margin-top: 10px;
+      }
+
+      footer {
+        margin-top: 30px;
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        #logo {
+          float: none;
+          text-align: center;
+        }
+
+        nav ul {
+          flex-direction: column;
+        }
+
+        nav ul li {
+          width: 100%;
+        }
+
+        nav ul li ul {
+          position: static;
+        }
+
+        #workout,
+        #diet {
+          width: 100%;
+          float: none;
+          margin-bottom: 10px;
+        }
+
+        .menu_box {
+          width: 100%;
+          float: none;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page">
+      <header>
+        <h1 id="logo"><a href="index.html">FIT Archive</a></h1>
+
+        <div class="clear"></div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="chest.html">가슴 운동</a>
+              <ul>
+                <li><a href="flat_bench.html">플랫 벤치프레스</a></li>
+                <li><a href="incline_bench.html">인클라인 벤치프레스</a></li>
+                <li><a href="cable_fly.html">케이블 플라이</a></li>
+                <li><a href="pecdeck_fly.html">펙덱 플라이</a></li>
+                <li><a href="dips.html">딥스</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="back.html">등 운동</a>
+              <ul>
+                <li><a href="pullup.html">풀업</a></li>
+                <li><a href="latpulldown.html">랫풀다운</a></li>
+                <li><a href="seated_row.html">시티드 로우</a></li>
+                <li><a href="barbell_row.html">바벨 로우</a></li>
+                <li><a href="tbar_row.html">티바 로우</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="shoulder.html">어깨 운동</a>
+              <ul>
+                <li><a href="military_press.html">밀리터리 프레스</a></li>
+                <li><a href="shoulder_press.html">숄더 프레스</a></li>
+                <li><a href="lateral_raise.html">사이드 레터럴 레이즈</a></li>
+                <li><a href="reverse_pecdeck.html">리버스 펙덱 플라이</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="leg.html">하체 운동</a>
+              <ul>
+                <li><a href="squat.html">스쿼트</a></li>
+                <li><a href="deadlift.html">루마니안 데드리프트</a></li>
+                <li><a href="leg_press.html">레그 프레스</a></li>
+                <li><a href="bulgarian_squat.html">불가리안 스쿼트</a></li>
+                <li><a href="leg_curl.html">레그 컬</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="machine.html">운동 기구</a>
+              <ul>
+                <li><a href="smith_machine.html">스미스 머신</a></li>
+                <li><a href="cable_machine.html">케이블 머신</a></li>
+                <li><a href="dumbbell.html">덤벨</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="banner">
+        <img src="./img/main_banner.jpg" alt="메인 배너" />
+      </section>
+
+      <section id="today">
+        <article id="workout">
+          <h2>오늘의 운동</h2>
+          <img src="./img/bench.jpg" alt="벤치프레스" />
+          <p>
+            오늘의 추천 운동은 플랫 벤치프레스입니다. 가슴 근육을 발달시키는
+            대표적인 운동으로 초보자도 쉽게 시작할 수 있습니다.
+          </p>
+        </article>
+
+        <article id="diet">
+          <h2>오늘의 식단</h2>
+
+          <ul>
+            <li>아침 : 계란 3개, 바나나 1개</li>
+            <li>점심 : 닭가슴살, 현미밥</li>
+            <li>저녁 : 닭가슴살 샐러드</li>
+            <li>간식 : 견과류, 프로틴 쉐이크</li>
+          </ul>
+
+          <hr style="margin: 15px 0" />
+
+          <h3>운동 상식</h3>
+
+          <ul>
+            <li>운동 전 5~10분의 워밍업은 부상 예방에 도움이 됩니다.</li>
+            <li>근육은 운동 중이 아니라 휴식 중에 성장합니다.</li>
+            <li>운동 후 단백질 섭취는 근육 회복과 성장에 효과적입니다.</li>
+            <li>충분한 수분 섭취는 운동 능력 유지에 중요합니다.</li>
+          </ul>
+
+          <hr style="margin: 15px 0" />
+
+          <h3>초보자 추천 루틴</h3>
+
+          <ul>
+            <li>월요일 : 가슴 운동 + 삼두 운동</li>
+            <li>화요일 : 등 운동 + 이두 운동</li>
+            <li>수요일 : 휴식 또는 가벼운 유산소</li>
+            <li>목요일 : 어깨 운동</li>
+            <li>금요일 : 하체 운동</li>
+            <li>토요일 : 유산소 운동</li>
+            <li>일요일 : 휴식</li>
+          </ul>
+        </article>
+
+        <div class="clear"></div>
+      </section>
+
+      <section id="shortcut">
+        <h2>부위별 바로가기</h2>
+
+        <article class="menu_box">
+          <a href="chest.html">
+            <img src="./img/chest.jpg" alt="가슴운동" />
+            <h3>가슴 운동</h3>
+          </a>
+        </article>
+
+        <article class="menu_box">
+          <a href="back.html">
+            <img src="./img/back.jpg" alt="등운동" />
+            <h3>등 운동</h3>
+          </a>
+        </article>
+
+        <article class="menu_box">
+          <a href="shoulder.html">
+            <img src="./img/shoulder.jpg" alt="어깨운동" />
+            <h3>어깨 운동</h3>
+          </a>
+        </article>
+
+        <article class="menu_box">
+          <a href="leg.html">
+            <img src="./img/leg.jpg" alt="하체운동" />
+            <h3>하체 운동</h3>
+          </a>
+        </article>
+
+        <article class="menu_box">
+          <a href="machine.html">
+            <img src="./img/machine.jpg" alt="운동기구" />
+            <h3>운동 기구</h3>
+          </a>
+        </article>
+
+        <div class="clear"></div>
+      </section>
+
+      <section id="intro">
+        <h2>FIT Archive 소개</h2>
+
+        <p>
+          FIT Archive는 운동 초보자를 위한 운동 정보 웹사이트입니다. 가슴, 등,
+          어깨, 하체 운동 방법과 운동기구 사용법을 제공하며, 올바른 자세와
+          주의사항을 통해 안전한 운동을 돕습니다.
+        </p>
+      </section>
+
+      <footer>
+        <p>FIT Archive</p>
+        <p>컴퓨터공학과 202533771 신현호</p>
+        <p>Copyright(C) FIT Archive All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>

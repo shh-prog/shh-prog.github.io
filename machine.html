@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>운동 기구 | FIT Archive</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "맑은 고딕";
+        background-color: #f5f7fa;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      #page {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+      }
+
+      header {
+        height: 100px;
+      }
+
+      #logo {
+        float: left;
+        margin-top: 25px;
+        color: #087bac;
+      }
+
+      #logo a {
+        color: #087bac;
+      }
+
+      nav {
+        margin-top: 10px;
+        background-color: #0e0f0f;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        width: 19%;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 15px;
+        color: white;
+      }
+
+      nav ul li:hover {
+        background-color: #055d81;
+      }
+
+      nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #087bac;
+        z-index: 100;
+      }
+
+      nav ul li:hover ul {
+        display: block;
+      }
+
+      nav ul li ul li {
+        width: 100%;
+      }
+
+      #title {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      #title p {
+        margin-top: 10px;
+        color: #666666;
+      }
+
+      .exercise_box {
+        width: 30%;
+        float: left;
+        margin: 1.66%;
+        border: 2px solid #cccccc;
+        text-align: center;
+        background-color: white;
+        transition: 0.3s;
+      }
+
+      .exercise_box img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .exercise_box h3 {
+        padding-top: 10px;
+      }
+
+      .exercise_box p {
+        padding: 10px;
+      }
+
+      .exercise_box:hover {
+        border-color: #087bac;
+        box-shadow: 0 0 10px #cccccc;
+      }
+
+      footer {
+        margin-top: 30px;
+        background-color: #333333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        header {
+          height: auto;
+        }
+
+        #logo {
+          float: none;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        nav ul li {
+          width: 100%;
+          display: block;
+        }
+
+        nav ul li ul {
+          position: static;
+        }
+
+        .exercise_box {
+          width: 100%;
+          margin: 0 0 15px 0;
+          float: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page">
+      <header>
+        <h1 id="logo">
+          <a href="index.html">FIT Archive</a>
+        </h1>
+
+        <div class="clear"></div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="chest.html">가슴 운동</a>
+              <ul>
+                <li><a href="flat_bench.html">플랫 벤치프레스</a></li>
+                <li><a href="incline_bench.html">인클라인 벤치프레스</a></li>
+                <li><a href="cable_fly.html">케이블 플라이</a></li>
+                <li><a href="pecdeck_fly.html">펙덱 플라이</a></li>
+                <li><a href="dips.html">딥스</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="back.html">등 운동</a>
+              <ul>
+                <li><a href="pullup.html">풀업</a></li>
+                <li><a href="latpulldown.html">랫풀다운</a></li>
+                <li><a href="seated_row.html">시티드 로우</a></li>
+                <li><a href="barbell_row.html">바벨 로우</a></li>
+                <li><a href="tbar_row.html">티바 로우</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="shoulder.html">어깨 운동</a>
+              <ul>
+                <li><a href="military_press.html">밀리터리 프레스</a></li>
+                <li><a href="shoulder_press.html">숄더 프레스</a></li>
+                <li><a href="lateral_raise.html">사이드 레터럴 레이즈</a></li>
+                <li><a href="reverse_pecdeck.html">리버스 펙덱 플라이</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="leg.html">하체 운동</a>
+              <ul>
+                <li><a href="squat.html">스쿼트</a></li>
+                <li><a href="deadlift.html">루마니안 데드리프트</a></li>
+                <li><a href="leg_press.html">레그 프레스</a></li>
+                <li><a href="bulgarian_squat.html">불가리안 스쿼트</a></li>
+                <li><a href="leg_curl.html">레그 컬</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="machine.html">운동 기구</a>
+              <ul>
+                <li><a href="smith_machine.html">스미스 머신</a></li>
+                <li><a href="cable_machine.html">케이블 머신</a></li>
+                <li><a href="dumbbell.html">덤벨</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="title">
+        <h1>운동 기구</h1>
+        <p>운동 기구를 선택하면 자세한 설명 페이지로 이동합니다.</p>
+      </section>
+
+      <article class="exercise_box">
+        <a href="smith_machine.html">
+          <img src="./img/smithmachine.jpg" alt="스미스 머신" />
+          <h3>스미스 머신</h3>
+          <p>안정적으로 중량 운동을 수행하는 머신</p>
+        </a>
+      </article>
+
+      <article class="exercise_box">
+        <a href="cable_machine.html">
+          <img src="./img/cablemachine.jpg" alt="케이블 머신" />
+          <h3>케이블 머신</h3>
+          <p>다양한 각도에서 근육을 자극하는 기구</p>
+        </a>
+      </article>
+
+      <article class="exercise_box">
+        <a href="dumbbell.html">
+          <img src="./img/dumbbell.jpg" alt="덤벨" />
+          <h3>덤벨</h3>
+          <p>자유로운 움직임이 가능한 기본 운동 기구</p>
+        </a>
+      </article>
+
+      <div class="clear"></div>
+
+      <footer>
+        <p>FIT Archive</p>
+        <p>컴퓨터공학과 202533771 신현호</p>
+        <p>Copyright(C) FIT Archive All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>

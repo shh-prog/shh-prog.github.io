@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>밀리터리 프레스 | FIT Archive</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "맑은 고딕";
+        background-color: #f5f7fa;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      #page {
+        width: 1000px;
+        margin: 0 auto;
+      }
+
+      header {
+        height: 100px;
+      }
+
+      #logo {
+        float: left;
+        margin-top: 25px;
+        color: #087bac;
+      }
+
+      #logo a {
+        color: #087bac;
+      }
+
+      nav {
+        margin-top: 10px;
+        background-color: #0e0f0f;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        width: 19%;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 15px;
+        color: white;
+      }
+
+      nav ul li:hover {
+        background-color: #055d81;
+      }
+
+      nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #087bac;
+        z-index: 100;
+      }
+
+      nav ul li:hover ul {
+        display: block;
+      }
+
+      nav ul li ul li {
+        width: 100%;
+        float: none;
+      }
+
+      #main_image {
+        margin-top: 30px;
+      }
+
+      #main_image img {
+        width: 100%;
+        height: 600px;
+      }
+
+      .exercise {
+        margin-top: 25px;
+        border: 1px solid #cccccc;
+        padding: 20px;
+        background-color: white;
+      }
+
+      .exercise h2 {
+        color: #087bac;
+      }
+
+      .exercise h3 {
+        margin-top: 20px;
+      }
+
+      .exercise p,
+      .exercise li {
+        margin-top: 10px;
+        line-height: 180%;
+      }
+
+      .exercise ol {
+        margin-left: 20px;
+      }
+
+      footer {
+        margin-top: 30px;
+        background: #333333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .related {
+        margin-top: 30px;
+      }
+
+      .related h2 {
+        margin-bottom: 15px;
+      }
+
+      .related_box {
+        width: 230px;
+        float: left;
+        margin-right: 20px;
+        border: 1px solid #cccccc;
+        text-align: center;
+      }
+
+      .related_box:last-child {
+        margin-right: 0;
+      }
+
+      .related_box img {
+        width: 100%;
+        height: 140px;
+      }
+
+      .related_box h4 {
+        padding: 10px;
+      }
+
+      .related_box:hover {
+        box-shadow: 0 0 10px #cccccc;
+      }
+      @media only screen and (max-width: 768px) {
+        #page {
+          width: 100%;
+          padding: 10px;
+        }
+
+        header {
+          height: auto;
+        }
+
+        #logo {
+          float: none;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        nav ul li {
+          width: 100%;
+          display: block;
+        }
+
+        nav ul li ul {
+          position: static;
+        }
+
+        #main_image img {
+          width: 100%;
+          height: auto;
+        }
+
+        .exercise {
+          width: 100%;
+          padding: 15px;
+        }
+
+        footer {
+          margin-top: 20px;
+        }
+
+        .related_box {
+          width: 100%;
+          float: none;
+          margin: 0 0 15px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page">
+      <header>
+        <h1 id="logo">
+          <a href="index.html">FIT Archive</a>
+        </h1>
+
+        <div class="clear"></div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="chest.html">가슴 운동</a>
+              <ul>
+                <li><a href="flat_bench.html">플랫 벤치프레스</a></li>
+                <li><a href="incline_bench.html">인클라인 벤치프레스</a></li>
+                <li><a href="cable_fly.html">케이블 플라이</a></li>
+                <li><a href="pecdeck_fly.html">펙덱 플라이</a></li>
+                <li><a href="dips.html">딥스</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="back.html">등 운동</a>
+              <ul>
+                <li><a href="pullup.html">풀업</a></li>
+                <li><a href="latpulldown.html">랫풀다운</a></li>
+                <li><a href="seated_row.html">시티드 로우</a></li>
+                <li><a href="barbell_row.html">바벨 로우</a></li>
+                <li><a href="tbar_row.html">티바 로우</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="shoulder.html">어깨 운동</a>
+              <ul>
+                <li><a href="military_press.html">밀리터리 프레스</a></li>
+                <li><a href="shoulder_press.html">숄더 프레스</a></li>
+                <li><a href="lateral_raise.html">사이드 레터럴 레이즈</a></li>
+                <li><a href="reverse_pecdeck.html">리버스 펙덱 플라이</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="leg.html">하체 운동</a>
+              <ul>
+                <li><a href="squat.html">스쿼트</a></li>
+                <li><a href="deadlift.html">루마니안 데드리프트</a></li>
+                <li><a href="leg_press.html">레그 프레스</a></li>
+                <li><a href="bulgarian_squat.html">불가리안 스쿼트</a></li>
+                <li><a href="leg_curl.html">레그 컬</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="machine.html">운동 기구</a>
+              <ul>
+                <li><a href="smith_machine.html">스미스 머신</a></li>
+                <li><a href="cable_machine.html">케이블 머신</a></li>
+                <li><a href="dumbbell.html">덤벨</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="main_image">
+        <img src="./img/militarypress.gif" alt="밀리터리 프레스" />
+      </section>
+
+      <article class="exercise">
+        <h2>밀리터리 프레스</h2>
+
+        <h3>운동 설명</h3>
+
+        <p>
+          밀리터리 프레스는 바벨을 이용하여 어깨를 위로 밀어 올리는 대표적인
+          프리웨이트 운동으로, 주로 삼각근 전면과 측면을 집중적으로 발달시키는
+          데 효과적이다. 상체 전반의 힘과 안정성을 요구하는 고난도 기본
+          운동으로, 어깨 근육뿐 아니라 코어와 상체 전체의 균형 발달에도 도움이
+          된다.
+        </p>
+
+        <h3>운동 방법</h3>
+
+        <ol>
+          <li>
+            바벨을 쇄골 위(어깨 앞쪽)에 위치시키고 양손으로 어깨너비보다 약간
+            넓게 잡는다.
+          </li>
+          <li>발은 어깨너비로 벌리고 허리를 곧게 편다.</li>
+          <li>코어에 힘을 주고 가슴을 들어 올린 상태를 유지한다.</li>
+          <li>숨을 내쉬며 바벨을 머리 위로 곧게 밀어 올린다.</li>
+          <li>팔꿈치를 완전히 잠그지 않고 어깨 긴장을 유지한다.</li>
+          <li>천천히 바벨을 시작 위치(쇄골 위)로 내린다.</li>
+        </ol>
+
+        <h3>주의사항</h3>
+
+        <ul>
+          <li>허리가 과하게 젖혀지지 않도록 복부에 힘을 준다.</li>
+          <li>
+            바벨이 몸 앞이나 뒤로 크게 흔들리지 않도록 수직으로 밀어 올린다.
+          </li>
+          <li>반동을 사용하지 말고 어깨 힘으로만 들어 올린다.</li>
+          <li>
+            목과 어깨에 과도한 긴장을 주지 않도록 자세를 안정적으로 유지한다.
+          </li>
+          <li>무거운 중량보다는 정확한 자세를 우선으로 한다.</li>
+        </ul>
+      </article>
+      <section class="related">
+        <h2>관련 운동 추천</h2>
+
+        <article class="related_box">
+          <a href="shoulder_press.html">
+            <img src="./img/shoulderpress.jpg" alt="숄더 프레스" />
+            <h4>숄더 프레스</h4>
+          </a>
+        </article>
+
+        <article class="related_box">
+          <a href="lateral_raise.html">
+            <img src="./img/lateralraise.jpg" alt="사이드 레터럴 레이즈" />
+            <h4>사이드 레터럴 레이즈</h4>
+          </a>
+        </article>
+
+        <article class="related_box">
+          <a href="reverse_pecdeck.html">
+            <img src="./img/reversepecdeck.jpg" alt="리버스 펙덱 플라이" />
+            <h4>리버스 펙덱 플라이</h4>
+          </a>
+        </article>
+
+        <div class="clear"></div>
+      </section>
+      <footer>
+        <p>FIT Archive</p>
+        <p>컴퓨터공학과 202533771 신현호</p>
+        <p>Copyright(C) FIT Archive All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>

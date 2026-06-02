@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스미스 머신 | FIT Archive</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "맑은 고딕";
+        background-color: #f5f7fa;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      #page {
+        width: 1000px;
+        margin: 0 auto;
+      }
+
+      header {
+        height: 100px;
+      }
+
+      #logo {
+        float: left;
+        margin-top: 25px;
+        color: #087bac;
+      }
+
+      #logo a {
+        color: #087bac;
+      }
+
+      nav {
+        margin-top: 10px;
+        background-color: #0e0f0f;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        width: 19%;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 15px;
+        color: white;
+      }
+
+      nav ul li:hover {
+        background-color: #055d81;
+      }
+
+      nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #087bac;
+        z-index: 100;
+      }
+
+      nav ul li:hover ul {
+        display: block;
+      }
+
+      nav ul li ul li {
+        width: 100%;
+        float: none;
+      }
+
+      #main_image {
+        margin-top: 30px;
+      }
+
+      #main_image img {
+        width: 100%;
+        height: 600px;
+      }
+
+      .exercise {
+        margin-top: 25px;
+        border: 1px solid #cccccc;
+        padding: 20px;
+        background-color: white;
+      }
+
+      .exercise h2 {
+        color: #087bac;
+      }
+
+      .exercise h3 {
+        margin-top: 20px;
+      }
+
+      .exercise p,
+      .exercise li {
+        margin-top: 10px;
+        line-height: 180%;
+      }
+
+      .exercise ol {
+        margin-left: 20px;
+      }
+
+      footer {
+        margin-top: 30px;
+        background: #333333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .related {
+        margin-top: 30px;
+      }
+
+      .related h2 {
+        margin-bottom: 15px;
+      }
+
+      .related_box {
+        width: 230px;
+        float: left;
+        margin-right: 20px;
+        border: 1px solid #cccccc;
+        text-align: center;
+      }
+
+      .related_box:last-child {
+        margin-right: 0;
+      }
+
+      .related_box img {
+        width: 100%;
+        height: 140px;
+      }
+
+      .related_box h4 {
+        padding: 10px;
+      }
+
+      .related_box:hover {
+        box-shadow: 0 0 10px #cccccc;
+      }
+      @media only screen and (max-width: 768px) {
+        #page {
+          width: 100%;
+          padding: 10px;
+        }
+
+        header {
+          height: auto;
+        }
+
+        #logo {
+          float: none;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        nav ul li {
+          width: 100%;
+          display: block;
+        }
+
+        nav ul li ul {
+          position: static;
+        }
+
+        #main_image img {
+          width: 100%;
+          height: auto;
+        }
+
+        .exercise {
+          width: 100%;
+          padding: 15px;
+        }
+
+        footer {
+          margin-top: 20px;
+        }
+
+        .related_box {
+          width: 100%;
+          float: none;
+          margin: 0 0 15px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page">
+      <header>
+        <h1 id="logo">
+          <a href="index.html">FIT Archive</a>
+        </h1>
+
+        <div class="clear"></div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="chest.html">가슴 운동</a>
+              <ul>
+                <li><a href="flat_bench.html">플랫 벤치프레스</a></li>
+                <li><a href="incline_bench.html">인클라인 벤치프레스</a></li>
+                <li><a href="cable_fly.html">케이블 플라이</a></li>
+                <li><a href="pecdeck_fly.html">펙덱 플라이</a></li>
+                <li><a href="dips.html">딥스</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="back.html">등 운동</a>
+              <ul>
+                <li><a href="pullup.html">풀업</a></li>
+                <li><a href="latpulldown.html">랫풀다운</a></li>
+                <li><a href="seated_row.html">시티드 로우</a></li>
+                <li><a href="barbell_row.html">바벨 로우</a></li>
+                <li><a href="tbar_row.html">티바 로우</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="shoulder.html">어깨 운동</a>
+              <ul>
+                <li><a href="military_press.html">밀리터리 프레스</a></li>
+                <li><a href="shoulder_press.html">숄더 프레스</a></li>
+                <li><a href="lateral_raise.html">사이드 레터럴 레이즈</a></li>
+                <li><a href="reverse_pecdeck.html">리버스 펙덱 플라이</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="leg.html">하체 운동</a>
+              <ul>
+                <li><a href="squat.html">스쿼트</a></li>
+                <li><a href="deadlift.html">루마니안 데드리프트</a></li>
+                <li><a href="leg_press.html">레그 프레스</a></li>
+                <li><a href="bulgarian_squat.html">불가리안 스쿼트</a></li>
+                <li><a href="leg_curl.html">레그 컬</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="machine.html">운동 기구</a>
+              <ul>
+                <li><a href="smith_machine.html">스미스 머신</a></li>
+                <li><a href="cable_machine.html">케이블 머신</a></li>
+                <li><a href="dumbbell.html">덤벨</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="main_image">
+        <img src="./img/smithmachine.jpg" alt="스미스 머신" />
+      </section>
+
+      <article class="exercise">
+        <h2>스미스 머신</h2>
+
+        <h3>기구 설명</h3>
+
+        <p>
+          스미스 머신은 바벨이 레일에 고정되어 수직 또는 일정한 궤도로
+          움직이도록 설계된 운동 기구이다. 일반 바벨 운동보다 균형을 잡기 쉬워
+          초보자도 안전하게 중량 운동을 수행할 수 있으며, 스쿼트, 벤치프레스,
+          숄더 프레스 등 다양한 운동에 활용된다. 특히 보조자 없이도 비교적
+          안전하게 운동할 수 있어 헬스장에서 널리 사용되는 기구이다.
+        </p>
+
+        <h3>사용 방법</h3>
+
+        <ol>
+          <li>운동 목적에 맞게 바벨 높이를 조절한다.</li>
+          <li>원하는 중량의 원판을 양쪽에 균형 있게 장착한다.</li>
+          <li>바벨을 잡고 올바른 자세를 취한다.</li>
+          <li>손목을 회전시켜 안전 잠금을 해제한다.</li>
+          <li>운동 동작을 수행하며 지정된 궤도를 따라 움직인다.</li>
+          <li>운동이 끝나면 바벨을 회전시켜 안전 고리에 다시 고정한다.</li>
+        </ol>
+
+        <h3>주의사항</h3>
+
+        <ul>
+          <li>운동 전 안전 고리와 중량 장착 상태를 확인한다.</li>
+          <li>레일의 움직임을 억지로 변경하려 하지 않는다.</li>
+          <li>과도한 중량을 사용하기보다 올바른 자세를 우선한다.</li>
+          <li>운동 중 항상 안전 잠금 위치를 인지한다.</li>
+          <li>균형이 쉬운 만큼 자세가 흐트러지지 않도록 주의한다.</li>
+        </ul>
+      </article>
+      <section class="related">
+        <h2>관련 기구 추천</h2>
+
+        <article class="related_box">
+          <a href="cable_machine.html">
+            <img src="./img/cablemachine.jpg" alt="케이블 머신" />
+            <h4>케이블 머신</h4>
+          </a>
+        </article>
+
+        <article class="related_box">
+          <a href="dumbbell.html">
+            <img src="./img/dumbbell.jpg" alt="덤벨" />
+            <h4>덤벨</h4>
+          </a>
+        </article>
+        <div class="clear"></div>
+      </section>
+
+      <footer>
+        <p>FIT Archive</p>
+        <p>컴퓨터공학과 202533771 신현호</p>
+        <p>Copyright(C) FIT Archive All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>
